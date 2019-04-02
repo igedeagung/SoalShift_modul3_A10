@@ -78,21 +78,25 @@ int main(void)
 		scanf("%c", &temp);
 		pesan_agmal=strcmp(pesan, "Agmal Ayo Bangun");
 		pesan_iraj=strcmp(pesan, "Iraj Ayo Tidur");
+		if(count_agmal==3)
+		{
+			call_agmal=0;
+		}
+		if(count_iraj==3)
+		{
+			call_iraj=0;
+		}
 		if(pesan_agmal==0)
 		{
 			if(call_agmal==1)
 			{
 				pthread_create(&(tid[0]), NULL, agmal_tambah, NULL);
-				count_agmal++;
+				count_iraj++;
 				pthread_join( tid[0], NULL);
 			}
 			else
 			{
 				printf("Agmal Ayo Bangun disabled 10 s\n");
-			}
-			if(count_agmal==3)
-			{
-				call_agmal=0;
 			}
 		}
 		if(pesan_iraj==0)
@@ -100,16 +104,12 @@ int main(void)
 			if(call_iraj==1)
 			{
 				pthread_create(&(tid[1]), NULL, iraj_tambah, NULL);
-				count_iraj++;
+				count_agmal++;
 				pthread_join( tid[1], NULL);
 			}
 			else
 			{
 				printf("Fitur Iraj Ayo Tidur disabled 10 s\n");
-			}
-			if(count_iraj==3)
-			{
-				call_iraj=0;
 			}
 		}
 		pesan[0]='\0';
