@@ -11,6 +11,14 @@
    4! = 24
 
    5! = 120
+   
+   ## Jawaban: 
+   
+- Source code: [soal1.c](/soal1/soal1.c)
+   
+- Penjelasan:
+   
+Pada soal ini kita mencari nilai faktorial dari suatu inputan maka gunakan argumen argc untuk menghitung berapa inputan dan argv[] untuk menyimpan inputan. Sebelum mecari nilai faktorialnya, inputannya harus disorting terlebih dahulu dengan menggunakan bubble sort. Setelah disorting baru dicari nilai faktorialnya.
 
 2. Pada suatu hari ada orang yang ingin berjualan 1 jenis barang secara private, dia memintamu membuat program C dengan spesifikasi sebagai berikut:
 
@@ -179,4 +187,6 @@ Lalu bila Wakeup_Status Agmal >= 100 maka program akan berhenti dan menampilkan 
     2.Exit
 
     G. Pastikan terminal hanya mendisplay status **detik ini** sesuai scene terkait (hint: menggunakan system(“clear”))
+    
+    
 
