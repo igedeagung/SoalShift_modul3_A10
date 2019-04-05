@@ -43,12 +43,12 @@ Pada soal ini kita mencari nilai faktorial dari suatu inputan maka gunakan argum
    **h. Menggunakan thread, socket, shared memory**
 
    ## Jawaban: 
-- Source code: [soal2.c](/soal2/soal2.c), [soal2_beli.c](/soal2/soal2_beli.c), dan [soal2_jual.c](/soal2/soal2_jual.c)
+- Source code: [soal2_cjual.c](/soal2/soal2_cjual.c), [soal2_cbeli.c](/soal2/soal2_cbeli.c), [soal2_sjual.c](/soal2/soal2_sjual.c), dan [soal2_sbeli.c](/soal2/soal2_sbeli.c)
 - Penjelasan:
    
-   Di soal ini kami membuat 2 server yaitu server penjual dan server pembeli bernama soal2_jual.c dan soal2_beli.c. Server penjual dan pembeli memiliki stok yang sama, agar jumlah stok penjual dan pembeli sama kami membuat shared memory. Untuk mengecek stok saat ini, di server penjual dibuat thread yang mengecek jumlah stok setiap 5 detik. 
+   Di soal ini kami membuat 2 server yaitu server penjual dan server pembeli bernama soal2_sjual.c dan soal2_sbeli.c. Server penjual dan pembeli memiliki stok yang sama, agar jumlah stok penjual dan pembeli sama kami membuat shared memory. Untuk mengecek stok saat ini, di server penjual dibuat thread yang mengecek jumlah stok setiap 5 detik. 
    
-   selain server, kami membuat client bernama soal2.c, di client ini bisa memberi inputan "tambah" dan "beli". Inputan "Tambah" untuk menambah stok di server penjual, inputan "beli" untuk mengurangi stok di server pembeli. Setelah kita memberi inputan "beli" kami mengecek stoknya, bila stoknya habis atau <= 0, maka server pembeli akan mengirim pesan "transaksi gagal" ke client, bila stoknya masih ada atau > 0, maka server pembeli akan mengirim pesan "transaksi berhasil" ke client.
+   selain server, kami membuat 2 client bernama soal2_cjual.c dan soal2_cbeli.c, di client soal2_cjual.c bisa memberi inputan "tambah" dan soal2_cbeli.c bisa memberi inputan "beli". Inputan "Tambah" untuk menambah stok di server penjual, inputan "beli" untuk mengurangi stok di server pembeli. Setelah kita memberi inputan "beli" kami mengecek stoknya, bila stoknya habis atau <= 0, maka server pembeli akan mengirim pesan "transaksi gagal" ke client, bila stoknya masih ada atau > 0, maka server pembeli akan mengirim pesan "transaksi berhasil" ke client.
    
     
 3. Agmal dan Iraj merupakan 2 sahabat yang sedang kuliah dan hidup satu kostan, sayangnya mereka mempunyai gaya hidup yang berkebalikan, dimana Iraj merupakan laki-laki yang sangat sehat,rajin berolahraga dan bangun tidak pernah kesiangan sedangkan Agmal hampir menghabiskan setengah umur hidupnya hanya untuk tidur dan ‘ngoding’. Dikarenakan mereka sahabat yang baik, Agmal dan iraj sama-sama ingin membuat satu sama lain mengikuti gaya hidup mereka dengan cara membuat Iraj sering tidur seperti Agmal, atau membuat Agmal selalu bangun pagi seperti Iraj. Buatlah suatu program C untuk menggambarkan kehidupan mereka dengan spesifikasi sebagai berikut:
