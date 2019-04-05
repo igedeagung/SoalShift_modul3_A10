@@ -188,5 +188,29 @@ Lalu bila Wakeup_Status Agmal >= 100 maka program akan berhenti dan menampilkan 
 
     G. Pastikan terminal hanya mendisplay status **detik ini** sesuai scene terkait (hint: menggunakan system(“clear”))
     
-    
+    ## Jawaban:
+       
+- Source Code: [soal5.c](/soal5/soal5.c) dan [soal5_shop.c](/soal5/soal5_shop.c)
 
+- Penjelasan:
+
+Soal ini membutuhkan penjelasan yang sangaaaaaaaat panjaaaaaang, pertama monster harus diberi nama terlebih dahulu, lalu dibagi menjadi beberapa fungsi yaitu fungsi Standby, fungsi battle, dan fungsi shop. Fungsi tersebut akan dijelaskan dibawah ini:
+
+1. Fungsi standby
+
+   Dalam fungsi ini ada beberapa menu berupa key press, yaitu menu eat, menu bath, menu battle, menu shop,dan menu exit. dan juga ada beberapa status yaitu hunger status, hygiene status, dan health status, semua pengurangan dan penambahan status dibuat didalam thread. beberapa menu akan dijelaskan dibawah ini
+   
+   Dalam menu eat, monster akan diberi makan bila hunger status < 200 dan juga food stoknya berkurang.
+   
+   Dalam menu bath, monster akan mandi bila hygiene status < 100, setelah itu bath akan diberi cooldown selama 20 detik dan setelah 20 detik monster bisa mandi lagi.
+   
+   Dalam menu battle, monster akan bertarung dengan monster lain dengan cara memenggil fungsi battle yang akan dijelaskan nanti di fungsi battle.
+   
+   Dalam menu shop, kita bisa membeli stok makanan sepuas puasnya tergantung jumlah stok makanan di toko dan akan dipanggil dalam fungsi shop.
+   
+   Dalam menu exit, program akan berhenti.
+   
+2. Fungsi battle
+
+   Dalam fungsi battle 
+   Dalam 
