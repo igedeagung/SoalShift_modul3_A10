@@ -7,29 +7,27 @@
 pthread_t tid[100];
 long long int A[100];
 int total;
+long long int sementara;
 
-void *fact(void *arg){
+void *fact(void *argv){
         long long int hasil[100];
         int i;
         int n;
-	long long int sementara;
-	for(int j=1; j<=total; j++)
-	{
-		sementara=A[j];
-		hasil[sementara]=1;
-        	for(i=1;i<=sementara;i++)
-        	{
-                	hasil[sementara] = hasil[sementara] * i;
-		}
-		printf("%lld! = %lld\n",sementara,hasil[sementara]);
+	sementara= *((long long*) argv);
+	hasil[sementara]=1;
+        for(i=1;i<=sementara;i++)
+        {
+                hasil[sementara] = hasil[sementara] * i;
 	}
+	printf("%lld! = %lld\n",sementara,hasil[sementara]);
 }
 
 
 int main(int argc,char *argv[])
 {
         int i,n,j,k,a,t,fak[100];
-        void *fa = A;
+	long long int *angka;
+	long long int tmp;
 	total=argc-1;
         for(i=1;i<argc;i++)
         {
@@ -42,8 +40,15 @@ int main(int argc,char *argv[])
                                 t = A[j-1];
                                 A[j-1] = A[j];
                                 A[j] = t;}}}
-        pthread_create(&(tid[0]), NULL, fact, NULL);
-        pthread_join(tid[0], NULL);
+	for(i=1; i<argc; i++)
+	{
+		angka = &A[i];
+	        pthread_create(&(tid[i]), NULL, fact, angka);
+	}
+	for(n=1; n<argc; n++)
+	{
+        	pthread_join(tid[n], NULL);
+	}
         return 1;
 }
 
