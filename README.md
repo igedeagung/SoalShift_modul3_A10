@@ -212,5 +212,16 @@ Soal ini membutuhkan penjelasan yang sangaaaaaaaat panjaaaaaang, pertama monster
    
 2. Fungsi battle
 
-   Dalam fungsi battle 
-   Dalam 
+   Dalam fungsi battle  ada 2 menu berisi Attack dan Run
+   
+   Dalam menu Attack monster menyerang musuh dengan health musuh berkurang 20 lalu musuh menyerang monster dengan health monster berkurang 20
+   
+   Dalam menu Run, monster kabur dari battle dan kembali ke fungsi standby
+   
+3. Fungsi Shop
+
+   Dalam Fungsi Shop ada 2 program yaitu penjual dan pembeli dengan stok penjual dan pembeli selalu sama, maka menggunakan shared memory
+   menu pada shop penjual dan pembeli berbeda, perbedaannya ada di:
+   - Restock dan Buy: Menu Restok untuk penjual -> untuk menambah stok, menu Buy untuk pembeli -> untuk mengurangi stok
+   - Exit dan Back: Menu Exit untuk penjual -> untuk keluar dari program, menu Back untuk pembeli -> kemabli ke menu sytandby
+
