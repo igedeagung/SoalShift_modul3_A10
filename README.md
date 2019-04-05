@@ -18,7 +18,7 @@
    
 - Penjelasan:
    
-Pada soal ini kita mencari nilai faktorial dari suatu inputan maka gunakan argumen argc untuk menghitung berapa inputan dan argv[] untuk menyimpan inputan. Sebelum mecari nilai faktorialnya, inputannya harus disorting terlebih dahulu dengan menggunakan bubble sort. Setelah disorting baru dicari nilai faktorialnya.
+Pada soal ini kita mencari nilai faktorial dari suatu inputan maka gunakan argumen argc untuk menghitung berapa inputan dan argv[] untuk menyimpan inputan. Sebelum mecari nilai faktorialnya, inputannya harus disorting terlebih dahulu dengan menggunakan bubble sort. Setelah disorting baru dicari nilai faktorialnya dengan menggunakan thread.
 
 2. Pada suatu hari ada orang yang ingin berjualan 1 jenis barang secara private, dia memintamu membuat program C dengan spesifikasi sebagai berikut:
 
@@ -203,7 +203,7 @@ Disini kami menggukan fungsi system untuk menjalankan perintah yang berada diset
 
 - Penjelasan:
 
-Soal ini membutuhkan penjelasan yang sangaaaaaaaat panjaaaaaang, pertama monster harus diberi nama terlebih dahulu, lalu dibagi menjadi beberapa fungsi yaitu fungsi Standby, fungsi battle, dan fungsi shop. Fungsi tersebut akan dijelaskan dibawah ini:
+Soal ini membutuhkan penjelasan yang sangat panjang, pertama monster harus diberi nama terlebih dahulu, lalu dibagi menjadi beberapa fungsi yaitu fungsi Standby, fungsi battle, dan fungsi shop. Fungsi tersebut akan dijelaskan dibawah ini:
 
 1. Fungsi standby
 
