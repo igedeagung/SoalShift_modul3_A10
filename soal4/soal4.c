@@ -43,8 +43,8 @@ void* rm()
 
 void* unzip()
 {
-	system("unzip /home/igedeagung/Documents/FolderProses1/KompresProses1.zip -d /home/igedeagung/Documents/FolderProses1/");
-	system("unzip /home/igedeagung/Documents/FolderProses2/KompresProses2.zip -d /home/igedeagung/Documents/FolderProses2/");
+	system("unzip /home/edgar/Documents/FolderProses1/KompresProses1.zip -d /home/edgar/Documents/FolderProses1/");
+	system("unzip /home/edgar/Documents/FolderProses2/KompresProses2.zip -d /home/edgar/Documents/FolderProses2/");
 }
 
 int main(void)
