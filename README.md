@@ -94,6 +94,15 @@ Lalu bila Wakeup_Status Agmal >= 100 maka program akan berhenti dan menampilkan 
     - Ketika Telah Selesai melakukan kompress file .zip masing-masing file, maka program akan memberi pesan “Menunggu 15 detik untuk mengekstrak kembali”
     - Wajib Menggunakan Multithreading
     - Boleh menggunakan system
+    
+    ## Jawaban :
+- Source code: [soal4.c](/soal4/soal4.c)
+- Penjelasan : 
+
+Soal ini meminta untuk membuat folder dan file , lalu file dizip dan file yang tidak dizip akan terhapus secara otomatis dan menunggu 15 detik untuk mengunzip kembali file tersebut.
+
+Disini kami menggukan fungsi system untuk menjalankan perintah yang berada disetiap thread, fungsi thread yang dibuat adalah untuk mkdir, touch, zip, unzip, rm, menyalin poreses dari ps aux. lalu thread dijalankan dan ketika sudah sampai thread yang berfungi untuk meremove ditambahkan sleep(15) yang berarti program akan menunggu selama 15 detik lalu berjalan kembali dan megunzip.  
+    
 
 5. Angga, adik Jiwang akan berulang tahun yang ke sembilan pada tanggal 6 April besok. Karena lupa menabung, Jiwang tidak mempunyai uang sepeserpun untuk membelikan Angga kado. Kamu sebagai sahabat Jiwang ingin membantu Jiwang membahagiakan adiknya sehingga kamu menawarkan bantuan membuatkan permainan komputer sederhana menggunakan program C. Jiwang sangat menyukai idemu tersebut. Berikut permainan yang Jiwang minta. 
 
